@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: "creamcake";
+  src: url("../PROJECT/fonts/Cream\ Cake.otf") format("opentype"),
+  url("../PROJECT/fonts/Vogue.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "vogue";
+  src: url("../PROJECT/fonts/Vogue.ttf") format("truetype");
+}
+
+
+
+#page {
+  background-image: url("/image/cake.jpg") ;
+  background-size: cover;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.navbar_logo {
+  font-size: 24px;
+  color: whitesmoke;
+  font-family: "creamcake";
+  font-size: xx-large;
+}
+
+.navbar_logo i {
+  color: whitesmoke;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navbar_menu li {
+  padding: 10px 40px;
+  font-family: "vogue";
+  
+}
+
+.navbar_icons {
+  list-style: none;
+  color: whitesmoke;
+  display: flex;
+}
+
+.navbar_icons li {
+  padding: 10px 15px;
+}
