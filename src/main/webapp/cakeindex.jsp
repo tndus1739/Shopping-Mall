@@ -33,11 +33,15 @@
             <i class="fa-solid fa-cart-shopping"></i>
           </li>
           <li>
-            <i class="fa-solid fa-user"><a href="LoginForm.jsp"></a></i>
+           <a href="login.jsp"> <i class="fa-solid fa-user"></i></a>
           </li>
         </ul>
       </nav>
       
+    </div>
+    
+    <div class = "cake">
+    <img src = "../image/choco" >
     </div>
   </body>
 </html>

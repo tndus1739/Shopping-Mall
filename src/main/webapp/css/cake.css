@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color : black ;
 }
 
 
@@ -17,9 +18,10 @@ body {
 
 
 #page {
-  background-image: url("/image/cake.jpg") ;
+  background-image: url("../image/cake.jpg") ; 
   background-size: cover;
   height: 100vh;
+  
 }
 a {
   text-decoration: none;
