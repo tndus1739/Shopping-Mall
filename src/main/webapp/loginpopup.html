@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Popup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        #loginPopup {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        #closeButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 로그인 버튼 -->
+<button onclick="openLoginPopup()">로그인</button>
+
+<!-- 로그인 팝업 -->
+<div id="overlay">
+    <div id="loginPopup">
+        <span id="closeButton" onclick="closeLoginPopup()">X</span>
+        <h2>로그인</h2>
+        <label for="username">사용자 이름:</label>
+        <input type="text" id="username">
+        <br>
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password">
+        <br>
+        <button onclick="login()">로그인</button>
+    </div>
+</div>
+
+<script>
+function openLoginPopup() {
+    document.getElementById('overlay').style.display = 'flex';
+}
+
+function closeLoginPopup() {
+    document.getElementById('overlay').style.display = 'none';
+}
+
+function login() {
+    // 여기에 로그인 처리 또는 데이터 전송 로직을 추가
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    console.log("사용자 이름: " + username + ", 비밀번호: " + password);
+
+    // 로그인 성공 시 팝업 닫기
+    closeLoginPopup();
+}
+</script>
+
+</body>
+</html>
